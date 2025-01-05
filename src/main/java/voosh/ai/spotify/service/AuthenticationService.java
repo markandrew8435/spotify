@@ -17,14 +17,10 @@ import java.util.Objects;
 public class AuthenticationService {
 
     @Autowired
-    private EmailPasswordService userService;
-
-    @Autowired
     private JWTService jwtService;
 
     @Autowired
     private RefreshTokenService refreshTokenService;
-
 
     @Autowired
     private EmailPasswordService emailPasswordService;

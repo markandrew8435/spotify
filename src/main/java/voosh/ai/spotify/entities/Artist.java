@@ -1,7 +1,11 @@
 package voosh.ai.spotify.entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 public class Artist {
 
@@ -12,9 +16,7 @@ public class Artist {
     @Column(nullable = false)
     private String name;
 
-    private boolean grammy; // Indicates if the artist has won a Grammy
+    private boolean grammy;
 
-    private boolean hidden; // Visibility toggle
-
-    // Getters and Setters
+    private boolean hidden;
 }

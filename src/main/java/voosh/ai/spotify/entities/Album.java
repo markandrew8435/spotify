@@ -16,9 +16,9 @@ public class Album {
     @Column(nullable = false)
     private String name;
 
-    private int year; // Release year
+    private Integer releaseYear; // Release year
 
-    private boolean hidden; // Visibility toggle
+    private Boolean hidden; // Visibility toggle
 
     private Long artistId; // Reference to Artist entity
 
