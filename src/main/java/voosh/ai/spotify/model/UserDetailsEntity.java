@@ -4,14 +4,13 @@ import jakarta.persistence.*;
 import voosh.ai.spotify.constants.Roles;
 
 import javax.management.relation.Role;
-import java.util.UUID;
 
 @Entity
 public class UserDetailsEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID userId;
+    private Long userId;
 
     @Column(nullable = false, unique = true)
     private String email;

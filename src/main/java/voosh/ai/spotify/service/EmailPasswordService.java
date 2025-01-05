@@ -26,12 +26,10 @@ public class EmailPasswordService {
         return true;
     }
 
-
     public EmailPasswordEntity register(EmailPasswordEntity user) {
         Utils.computeSHA256(user.getPassword());
         return emailPasswordRepository.save(user);
     }
-
 
     public UserDetailsEntity loadByEmail(String s) {
         return null;
